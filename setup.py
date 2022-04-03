@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='commentgen',
-    version='1.0',
+    version='1.0.0',
     description='Generate comments',
     url='https://github.com/suru33/commentgen',
     author='SuRu',
@@ -12,7 +12,7 @@ setup(
     install_requires=['Click'],
     entry_points={
         'console_scripts': [
-            'commentgen=cli:main',
+            'commentgen=commentgen:cli',
         ],
     },
 )

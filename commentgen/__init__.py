@@ -49,7 +49,7 @@ def get_comment_chars(lang) -> (str, str):
 @click.option("--length", type=click.INT, default=80)
 @click.option("--pattern", type=click.STRING, default="-")
 @click.argument("text", type=str)
-def main(lang: str, length: int, pattern: str, text: str):
+def cli(lang: str, length: int, pattern: str, text: str):
     start, end = get_comment_chars(lang)
     text = text.strip()
     pattern = pattern[0]
